@@ -1,4 +1,4 @@
-blockquote:after {
+blockquote {
     font-family: Georgia, serif;
     font-size: 18px;
     font-style: italic;
@@ -9,7 +9,6 @@ blockquote:after {
     position: relative;
     left: 17px;
     color: #383838;
-    content: "Do not spoil what you have by desiring what you have not.";
 }
 
 blockquote:before {
@@ -22,14 +21,21 @@ blockquote:before {
     color: #7a7a7a;
 }
 
-blockquote cite:after {
+blockquote cite {
     color: #999999;
     font-size: 14px;
     display: block;
     margin-top: 5px;
-    content: "Epicurus";
 }
 
 blockquote cite:before {
     content: "\2014 \2009";
+}
+
+blockquote cite span:before {
+    content: "Epicurus";
+}
+
+blockquote span:before {
+    content: "Do not spoil what you have by desiring what you have not.";
 }
