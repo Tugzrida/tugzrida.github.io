@@ -18,7 +18,7 @@
         background-color: white;
         position: absolute;
         left: 0px;
-        height: 85px;
+        height: 60px;
         width: 540px;
         top: 0px;
     }
@@ -56,6 +56,12 @@
     function getQuote() {
         $("#quote").prepend(quote);
         $("#cite").html(person);
+        var newlines = quote.match(/<br>/g).length;
+        switch(newlines){
+        case 1:
+        document.getElementById("quotecontainer").style.height = "85px";
+        break;
+}
     }
     document.onready = getQuote();
 </script>
