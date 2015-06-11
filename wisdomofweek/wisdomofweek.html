@@ -1,3 +1,4 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="quote.js"></script>
 <style>
     blockquote {
@@ -52,9 +53,9 @@
     </blockquote>
 </div>
 <script>
-function getQuote() {
-document.getElementById("quote").innerHTML = quote;
-document.getElementById("cite").innerHTML = person;
-}
-document.onready = getQuote();
+    function getQuote() {
+        $("#quote").prepend(quote);
+        $("#cite").html(person);
+    }
+    document.onready = getQuote();
 </script>
