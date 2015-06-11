@@ -8,6 +8,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJson&page=Ralph_Waldo_Emerson"></script>
 </head>
 
 <body>
@@ -20,21 +21,8 @@
 
     <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste into the end of your signature block in your email client.
     <script>
-        function loadJSON() {
-            $.ajax({
-                'url': 'https://en.wikipedia.org/w/api.php',
-                'data': {
-                    'action': 'parse',
-                    'section': '0',
-                    'prop': 'text',
-                    'page': 'Ralph_Waldo_Emerson',
-                    'format': 'json',
-                    'origin': 'https://tugzrida.github.io'
-                },
-                'success': function (data) {
-                    alert(data);
-                }
-            });
+        function loadJSON(data) {
+            alert(data);
         }
     </script>
 </body>
