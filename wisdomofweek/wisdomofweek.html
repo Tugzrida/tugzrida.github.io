@@ -1,11 +1,4 @@
 <script src="quote.js"></script>
-<script>
-function getQuote() {
-document.getElementById("quote").innerHTML = quote;
-document.getElementById("cite").innerHTML = person;
-}
-document.onready = getQuote();
-</script>
 <style>
     blockquote {
         font-family: Georgia, serif;
@@ -58,3 +51,10 @@ document.onready = getQuote();
     <blockquote id="quote">What lies behind you and what lies in front of you,<br>pales in comparison to what lies inside of you.<cite id="cite">Ralph Waldo Emerson</cite>
     </blockquote>
 </div>
+<script>
+function getQuote() {
+document.getElementById("quote").innerHTML = quote;
+document.getElementById("cite").innerHTML = person;
+}
+document.onready = getQuote();
+</script>
