@@ -60,9 +60,17 @@
 
         <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste it into the end of your signature block in your email client. To select this on iOS, you will just need to hold down on the asterisks. Once you have successfully copied & pasted the quote, you can delete the asterisks.</div>
     <script>
-        function loadWIKI(data) {
+        function loadWiki() {
+var wikiscript = document.createElement('script');
+
+wikiscript.setAttribute('src','//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
+
+document.body.appendChild(wikiscript);
+}
+document.onready = loadWiki();
+        function wikiLoaded(data) {
             $('#wikientry').html(data.parse.text['*']);
-            $('.person').html(data.parse.title);
+            $('.person').html(person);
         
         if (quote.search(/<br>/g) != -1) {
             var newlines = quote.match(/<br>/g).length;
@@ -83,7 +91,6 @@
         }
 }
     </script>
-    <script src="//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadWIKI&page=Ralph_Waldo_Emerson"></script>
 </body>
 
 </html>
