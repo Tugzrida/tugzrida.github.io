@@ -16,11 +16,6 @@
             margin-right: auto;
         }
         
-        #wikiheading {
-            padding-top: 0px;
-            margin-top: 0px;
-        }
-        
         #instructions {
             width: 75%;
             padding-top: 45px;
@@ -29,25 +24,33 @@
         }
         
         #wikiwrapper {
-            height: 44%;
+            height: 60%;
             width: 80%;
             margin-left: auto;
             margin-right: auto;
         }
         
         #siteSub {
-            text-align: right;
-            position: relative;
-            bottom: 26px;
+            //text-align: right;
+        }
+        
+        #intro {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 
 <body>
+    <div id="intro">
+        <h3>This week's quote is from <span class="person"></span>:</h3>
+        <iframe src="wisdomofweek.html" width="540" height="85" scrolling="no" frameborder="no"></iframe>
+        <br>
+    </div>
     <div id="wikiwrapper">
-        <h1 class="firstHeading" id="wikiheading"></h1>
-        <div id="siteSub">From Wikipedia, the free encyclopedia</div>
         <div id="wikientry"></div>
+        <div id="siteSub">From Wikipedia, the free encyclopedia</div>
     </div>
     <div id="instructions">
         <h3>To insert the Wisdom Quote of The Week in your own email signature:</h3> Most email clients do not allow HTML to be typed directly into the signature block if yours does or has the option to, then follow the HTML method. If your client does not allow HTML in the signature block then follow the Copy/Paste method.
@@ -60,7 +63,7 @@
     <script>
         function loadJSON(data) {
             $('#wikientry').html(data.parse.text['*']);
-            $('#wikiheading').html(data.parse.title);
+            $('.person').html(data.parse.title);
         }
     </script>
     <script src="//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJSON&page=Ralph_Waldo_Emerson"></script>
