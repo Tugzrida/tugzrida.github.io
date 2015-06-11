@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <iframe src="//en.wikipedia.org/wiki/Ralph_Waldo_Emerson" width="100%" height="60%"></iframe>
+    <div id="wikientry" width="100%" height="60%"></div>
     <h3>To insert the Wisdom Quote of The Week in your own email signature:</h3> Most email clients do not allow HTML to be typed directly into the signature block if yours does or has the option to, then follow the HTML method. If your client does not allow HTML in the signature block then follow the Copy/Paste method.
     <br>
     <br>
@@ -21,7 +21,7 @@
     <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste into the end of your signature block in your email client.
     <script>
         function loadJSON(data) {
-            alert(data);
+            $('#wikientry').html(data.parse.text['*']);
         }
     </script>
     <script src="https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJSON&page=Ralph_Waldo_Emerson"></script>
