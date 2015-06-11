@@ -56,16 +56,24 @@
     function getQuote() {
         $("#quote").prepend(quote);
         $("#cite").html(person);
-        var newlines = quote.match(/<br>/g).length;
-        switch(newlines){
+
+        if (quote.search(/<br>/g) != -1) {
+            var newlines = quote.match(/<br>/g).length;
+        } else {
+            var newlines = 0;
+        }
+
+        switch (newlines) {
+        case 0:
+            break;
         case 1:
-        document.getElementById("quotecontainer").style.height = "85px";
-        break;
+            document.getElementById("quotecontainer").style.height = "85px";
+            break;
 
         case 2:
-        document.getElementById("quotecontainer").style.height = "105px";
-        break;
-}
+            document.getElementById("quotecontainer").style.height = "111px";
+            break;
+        }
     }
     document.onready = getQuote();
 </script>
