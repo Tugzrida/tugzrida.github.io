@@ -28,11 +28,9 @@
 
     <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste into the end of your signature block in your email client.
     <script>
-        var person = 'Ralph Waldo Emerson';
-
         function loadJSON(data) {
             $('#wikientry').html(data.parse.text['*']);
-            $('#wikiheading').html(person);
+            $('#wikiheading').html(data.parse.title);
         }
     </script>
     <script src="https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJSON&page=Ralph_Waldo_Emerson"></script>
