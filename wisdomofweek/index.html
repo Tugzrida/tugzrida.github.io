@@ -3,16 +3,17 @@
 <head>
     <title>Wisdom Of The Week</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*">
     <link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=ext.rtlcite%2Cwikihiero%2CwikimediaBadges%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector&amp;*">
+    <link rel="stylesheet" href="//en.wikipedia.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         #wikientry {
-            height: 49%;
-            width: 100%;
+            height: 100%;
             overflow: scroll;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         #wikiheading {
@@ -20,33 +21,49 @@
             margin-top: 0px;
         }
         
-        body {
+        #instructions {
             width: 75%;
+            padding-top: 45px;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        #wikiwrapper {
+            height: 44%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #siteSub {
+            text-align: right;
+            position: relative;
+            bottom: 26px;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="firstHeading" id="wikiheading"></h1>
-    <div id="wikientry"></div>
-    <div class="jumbotron">
+    <div id="wikiwrapper">
+        <h1 class="firstHeading" id="wikiheading"></h1>
+        <div id="siteSub">From Wikipedia, the free encyclopedia</div>
+        <div id="wikientry"></div>
+    </div>
+    <div id="instructions">
         <h3>To insert the Wisdom Quote of The Week in your own email signature:</h3> Most email clients do not allow HTML to be typed directly into the signature block if yours does or has the option to, then follow the HTML method. If your client does not allow HTML in the signature block then follow the Copy/Paste method.
         <br>
         <br>
 
         <h4>HTML Method:</h4>If your email client has the option to include HTML in the signature, enable it and then copy/paste the following HTML code at the end of the signature section in your email client.<pre><code class="language-markup">&lt;a href=&quot;https://tugzrida.github.io/wisdomofweek/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://tugzrida.github.io/wisdomofweek/wisdomofweek.png&quot; width=&quot;540px&quot;&gt;&lt;/a&gt;</code></pre>
 
-        <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste into the end of your signature block in your email client.
-    </div>
+        <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste into the end of your signature block in your email client.</div>
     <script>
         function loadJSON(data) {
             $('#wikientry').html(data.parse.text['*']);
             $('#wikiheading').html(data.parse.title);
         }
     </script>
-    <script src="https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJSON&page=Ralph_Waldo_Emerson"></script>
+    <script src="//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=loadJSON&page=Ralph_Waldo_Emerson"></script>
 </body>
 
 </html>
