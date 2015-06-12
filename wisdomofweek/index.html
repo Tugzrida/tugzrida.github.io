@@ -84,13 +84,10 @@
 
             document.body.appendChild(wikiscript);
         }
+
         document.onready = loadWiki();
 
         function wikiLoaded(data) {
-            $('#wikientry').html(data.parse.text['*']);
-            $('.person').html(person);
-            $('.week').html(week);
-
             switch (quotelines) {
             case 1:
                 document.getElementById("quoteframe").style.height = "59px";
@@ -102,6 +99,10 @@
                 document.getElementById("quoteframe").style.height = "111px";
                 break;
             }
+
+            $('.week').html(week);
+            $('.person').html(person);
+            $('#wikientry').html(data.parse.text['*']);
         }
     </script>
 </body>
