@@ -91,20 +91,14 @@
             $('.person').html(person);
             $('.week').html(week);
 
-            if (quote.search(/<br>/g) != -1) {
-                var newlines = quote.match(/<br>/g).length;
-            } else {
-                var newlines = 0;
-            }
-
-            switch (newlines) {
-            case 0:
+            switch (quotelines) {
+            case 1:
                 document.getElementById("quoteframe").style.height = "59px";
                 break;
-            case 1:
+            case 2:
                 document.getElementById("quoteframe").style.height = "85px";
                 break;
-            case 2:
+            case 3:
                 document.getElementById("quoteframe").style.height = "111px";
                 break;
             }

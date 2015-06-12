@@ -53,25 +53,23 @@
     </blockquote>
 </div>
 <script>
+    function makePic() {
+
+    }
+
     function getQuote() {
         $("#quote").prepend(quote);
         $("#cite").html(person);
 
-        if (quote.search(/<br>/g) != -1) {
-            var newlines = quote.match(/<br>/g).length;
-        } else {
-            var newlines = 0;
-        }
-
-        switch (newlines) {
-        case 0:
+        switch (quotelines) {
+        case 1:
             document.getElementById("quotecontainer").style.height = "59px";
             break;
-        case 1:
+        case 2:
             document.getElementById("quotecontainer").style.height = "85px";
             break;
 
-        case 2:
+        case 3:
             document.getElementById("quotecontainer").style.height = "111px";
             break;
         }
