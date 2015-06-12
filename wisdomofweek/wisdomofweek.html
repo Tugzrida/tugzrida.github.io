@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="quote.js"></script>
 <style>
     blockquote {
@@ -47,16 +47,19 @@
     body {
         background-color: black;
     }
+    
+    #clkmsg {
+        color: #999999;
+        font-size: 14px;
+        position: absolute;
+        right: 60px;
+    }
 </style>
 <div id="quotecontainer">
     <blockquote id="quote"><cite id="cite"></cite>
     </blockquote>
 </div>
 <script>
-    function makePic() {
-
-    }
-
     function getQuote() {
         $("#quote").prepend(quote);
         $("#cite").html(person);
@@ -71,6 +74,10 @@
         case 3:
             document.getElementById("quotecontainer").style.height = "111px";
             break;
+        }
+
+        if (window.location.search == "?makepic") {
+            $('#cite').append('<span id="clkmsg">Click for info...</span>');
         }
     }
     document.onready = getQuote();
