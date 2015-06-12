@@ -1,10 +1,38 @@
 <html>
+
 <head>
-<title>Copy/Paste Method</title>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <title>Copy/Paste Method</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
+
 <body>
-*****************************<br><a href="https://tugzrida.github.io/wisdomofweek/" target="_blank"><img src="https://tugzrida.github.io/wisdomofweek/wisdomofweek.png" width="540px">
-</a>
+    <a href="https://tugzrida.github.io/wisdomofweek/" target="_blank"><img src="https://tugzrida.github.io/wisdomofweek/wisdomofweek.png" width="540px">
+    </a>
+    <br>
+    <button class="btn btn-xs btn-primary" id="selebutton">Select all</button>
+    <script>
+        function ranges(e, opts) {
+            var sel = window.getSelection(),
+                range;
+
+            range = document.createRange();
+
+            range.setStart(opts.start, opts.startOffset);
+            range.setEnd(opts.end, opts.endOffset);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+
+        $('#selebutton').click(function (e) {
+            ranges(e, {
+                start: $("a")[0].firstChild,
+                startOffset: 0,
+                end: $("a")[0].lastChild,
+                endOffset: 0
+            })
+        });
+    </script>
 </body>
+
 </html>

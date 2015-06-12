@@ -56,41 +56,43 @@
         <br>
         <br>
 
-        <h4>HTML Method:</h4>If your email client has the option to include HTML in the signature, enable it and then copy/paste the following HTML code at the end of the signature section in your email client.<pre><code class="language-markup">&lt;a href=&quot;https://tugzrida.github.io/wisdomofweek/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://tugzrida.github.io/wisdomofweek/wisdomofweek.png&quot; width=&quot;540px&quot;&gt;&lt;/a&gt;</code></pre><br>
+        <h4>HTML Method:</h4>If your email client has the option to include HTML in the signature, enable it and then copy/paste the following HTML code at the end of the signature section in your email client.<pre><code class="language-markup">&lt;a href=&quot;https://tugzrida.github.io/wisdomofweek/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://tugzrida.github.io/wisdomofweek/wisdomofweek.png&quot; width=&quot;540px&quot;&gt;&lt;/a&gt;</code></pre>
+        <br>
 
         <h4>Copy/Paste Method:</h4>Most email clients do not allow HTML directly in the signature block. For these email clients(eg. Apple Mail, iOS mail, Gmail, etc...) <a href="copy.html" target="_blank">Open this window</a> then select all the contents and copy/paste it into the end of your signature block in your email client. To select this on iOS, you will just need to hold down on the asterisks. Once you have successfully copied & pasted the quote, you can delete the asterisks.</div>
     <script>
         function loadWiki() {
-var wikiscript = document.createElement('script');
+            var wikiscript = document.createElement('script');
 
-wikiscript.setAttribute('src','//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
+            wikiscript.setAttribute('src', '//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
 
-document.body.appendChild(wikiscript);
-}
-document.onready = loadWiki();
+            document.body.appendChild(wikiscript);
+        }
+        document.onready = loadWiki();
+
         function wikiLoaded(data) {
             $('#wikientry').html(data.parse.text['*']);
             $('.person').html(person);
             $('.week').html(week);
-        
-        if (quote.search(/<br>/g) != -1) {
-            var newlines = quote.match(/<br>/g).length;
-        } else {
-            var newlines = 0;
-        }
 
-        switch (newlines) {
-        case 0:
-            document.getElementById("quoteframe").style.height = "59px";
-            break;
-        case 1:
-            document.getElementById("quoteframe").style.height = "85px";
-            break;
-        case 2:
-            document.getElementById("quoteframe").style.height = "111px";
-            break;
+            if (quote.search(/<br>/g) != -1) {
+                var newlines = quote.match(/<br>/g).length;
+            } else {
+                var newlines = 0;
+            }
+
+            switch (newlines) {
+            case 0:
+                document.getElementById("quoteframe").style.height = "59px";
+                break;
+            case 1:
+                document.getElementById("quoteframe").style.height = "85px";
+                break;
+            case 2:
+                document.getElementById("quoteframe").style.height = "111px";
+                break;
+            }
         }
-}
     </script>
 </body>
 
