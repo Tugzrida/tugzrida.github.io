@@ -1,5 +1,5 @@
-var week = "8B";
-var quote = "What lies behind you and what lies in front of you,<br>pales in comparison to what lies inside of you.";
+var week = "9A";
+var quote = "Failure is only the opportunity to begin again,<br>only this time more wisely";
 var quotelines = 2;
-var person = "Ralph Waldo Emerson";
-var wiki = "Ralph_Waldo_Emerson";
+var person = "Henry Ford";
+var wiki = "Henry_Ford";
