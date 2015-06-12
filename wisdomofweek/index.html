@@ -41,7 +41,7 @@
 
 <body>
     <div id="intro">
-        <h3>This week's quote is from <span class="person"></span>:</h3>
+        <h3>The quote for week <span class="week"></span> is from <span class="person"></span>:</h3>
         <iframe id="quoteframe" src="wisdomofweek.html" width="540" height="85" scrolling="no" frameborder="no"></iframe>
         <br>
         <br>
@@ -71,6 +71,7 @@ document.onready = loadWiki();
         function wikiLoaded(data) {
             $('#wikientry').html(data.parse.text['*']);
             $('.person').html(person);
+            $('.week').html(week);
         
         if (quote.search(/<br>/g) != -1) {
             var newlines = quote.match(/<br>/g).length;
