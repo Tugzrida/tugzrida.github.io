@@ -1,5 +1,5 @@
-var week = "9A";
-var quote = "Failure is only the opportunity to begin again,<br>only this time more wisely";
+var week = "10B";
+var quote = "If you only do what you know you can do -<br>you never do very much";
 var quotelines = 2;
-var person = "Henry Ford";
-var wiki = "Henry_Ford";
+var person = "Tom Krause";
+var wiki = "Tom_Krause";
