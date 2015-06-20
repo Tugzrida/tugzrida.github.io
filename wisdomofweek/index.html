@@ -84,9 +84,7 @@
     <script>
         function loadWiki() {
             var wikiscript = document.createElement('script');
-
             wikiscript.setAttribute('src', '//en.wikipedia.org/w/api.php?action=parse&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
-
             document.body.appendChild(wikiscript);
         }
 
@@ -108,6 +106,7 @@
             $('.week').html(week);
             $('.person').html(person);
             $('#wikientry').html(data.parse.text['*']);
+            $('#toc').remove();
         }
     </script>
 </body>
