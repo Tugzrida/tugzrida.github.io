@@ -85,7 +85,7 @@
         function loadWiki() {
             var wikiscript = document.createElement('script');
 
-            wikiscript.setAttribute('src', '//en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
+            wikiscript.setAttribute('src', '//en.wikipedia.org/w/api.php?action=parse&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
 
             document.body.appendChild(wikiscript);
         }
