@@ -1,5 +1,5 @@
 var week = "10B";
-var quote = "If you only do what you know you can do -<br>you never do very much";
-var quotelines = 2;
-var person = "Tom Krause";
-var wiki = "Tom_Krause";
+var quote = "Without courage, wisdom bears no fruit";
+var quotelines = 1;
+var person = "Baltasar Gracián";
+var wiki = "Baltasar_Gracián";
