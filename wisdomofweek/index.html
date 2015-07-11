@@ -110,6 +110,10 @@
             $('#wikientry').html(data.parse.text['*']);
             $('#toc').remove();
         }
+
+        $('#copypaste').keypress(function (e) {
+            e.preventDefault();
+        })
     </script>
 </body>
 
