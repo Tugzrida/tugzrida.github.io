@@ -1,5 +1,5 @@
-var week = "1A";
-var quote = "The difference between being ordinary and<br>being extraordinary, is that little bit extra.";
+var week = "2B";
+var quote = "You never really know someone until<br>you have walked in their shoes.";
 var quotelines = 2;
-var person = "Jimmy Johnson";
-var wiki = "Jimmy_Johnson_(American_football_coach)";
+var person = "To Kill a Mockingbird by Harper Lee";
+var wiki = "To_Kill_a_Mockingbird";
