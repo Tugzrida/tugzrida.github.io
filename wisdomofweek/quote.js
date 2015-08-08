@@ -1,5 +1,5 @@
-var week = "3A";
-var quote = "Happiness is not something ready made. It comes from<br>your own actions";
-var quotelines = 2;
-var person = "The Dalai Lama";
-var wiki = "14th_Dalai_Lama";
+var week = "5A";
+var quote = "Teachers open the door. You must enter by yourself";
+var quotelines = 1;
+var person = "Chinese Proverb";
+var wiki = "Proverbs_commonly_attributed_to_be_Chinese";
