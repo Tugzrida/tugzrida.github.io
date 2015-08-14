@@ -1,5 +1,5 @@
-var week = "5A";
-var quote = "Teachers open the door. You must enter by yourself.";
+var week = "6B";
+var quote = "You always pass failure on your way to success.";
 var quotelines = 1;
-var person = "Chinese Proverb";
-var wiki = "Confucius";
+var person = "Mickey Rooney";
+var wiki = "Mickey_Rooney";
