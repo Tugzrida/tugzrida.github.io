@@ -1,5 +1,5 @@
-var week = "7A";
-var quote = "Humility is not thinking less of yourself,<br>it's thinking of yourself less.";
+var week = "8B";
+var quote = "You don’t have to be great to start, but you do have to<br>start to be great.";
 var quotelines = 2;
-var person = "C. S. Lewis";
-var wiki = "C._S._Lewis";
+var person = "Zig Ziglar";
+var wiki = "Zig_Ziglar";
