@@ -116,7 +116,8 @@
         }
 
         $('#copypaste').keydown(function (e) {
-            e.preventDefault();
+            if (!e.ctrlKey)
+                e.preventDefault();
         });
     </script>
 </body>
