@@ -1,5 +1,5 @@
-var week = "9A";
-var quote = "Life is a journey, not a destination.";
+var week = "10B";
+var quote = "Seize the Day.";
 var quotelines = 1;
-var person = "Ralph Waldo Emerson";
-var wiki = "Ralph_Waldo_Emerson";
+var person = "Horace(Ancient Roman Poet)";
+var wiki = "Horace";
