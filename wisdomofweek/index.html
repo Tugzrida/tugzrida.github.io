@@ -58,7 +58,7 @@
 
 <body>
     <div id="intro">
-        <h3>The quote for Week <span class="week"></span> is from <span class="person"></span>:</h3>
+        <h3>The quote for<!--Week <span class="week"></span>--> the holidays is from <span class="person"></span>:</h3>
         <iframe id="quoteframe" src="//tugzrida.github.io/wisdomofweek/wisdomofweek.html" width="540" height="59" scrolling="no" frameborder="no"></iframe>
         <br>
         <br>
@@ -111,8 +111,28 @@
 
             $('.week').html(week);
             $('.person').html(person);
-            $('#wikientry').html(data.parse.text['*']);
-            $('#toc').remove();
+            //$('#wikientry').html(data.parse.text['*']);
+            //$('#toc').remove();
+            $('#wikientry').html('<div class="entry-content">
+			<p><a href="http://www.trifects.com/being-a-playmaker-and-a-teammate/stick-handling/" rel="attachment wp-att-477"><img class="alignleft size-full wp-image-477" alt="Skating fast and outmaneuvering oponents" src="http://www.trifects.com/wp-content/uploads/2013/05/stick-handling.jpg" width="625" height="414"></a>In hockey a playmaker has speed, balance, judgement and the stick-handling skills to maneuver through opponents. Great playmakers have the judgement to pass the puck to well positioned teammates to maximize scoring.</p>
+<p>My nephew landed a spot today on an elite hockey team for his age group. He’s skated for 10 of his 14 years and there’s a worn out dryer in the family garage that stands in for a goal. There’s been family support and good coaching that has emphasized skill drills, strategy and working as part of a team.</p>
+<p>I was thinking of parallels for sales teams while I was watching the tryouts this morning at Sharks Ice San Jose.<span id="more-468"></span></p>
+<h4>Hard Work</h4>
+<p>There’s a sign in the training room above the ice that reads:</p>
+<blockquote><p>“Hard work beats talent when talent doesn’t work hard.”</p></blockquote>
+<p>I’ve known people who were naturally skilled in sales who bring intelligence and empathy to business. Those who do the best build on these talents and create more opportunity through hard work. Sales can be a numbers game. Marketing teams help by drawing in interested contacts. Sales people who are in continuous outreach mode benefit most from these programs.</p>
+<h4>Speed</h4>
+<p>The most successful sales teams appreciate the importance of speed. A client’s interest today may dissipate by next week. Sales teams that move quickly do better competing with alternate suppliers. Company leaders and operations teams can help by streamlining internal sales processes to keep as much sales time as possible focused on customers. Sales people can do even better when companies provide ready access to high quality market-focused materials and insights.</p>
+<h4>Judgement</h4>
+<p>In complex enterprise sales, the best sales people are able to simulate in their heads where a series of possible next steps will potentially lead. By understanding which paths &nbsp; increase or reduce risk and which are likely to be faster or slower enables sales people to make on-the-spot judgements that help outmaneuver competitors and maximize results.</p>
+<h4>Teamwork</h4>
+<p>In enterprise sales, the most skilled Applications Engineers and Technical Marketing people tend to gravitate toward the most successful sales people and grumble when paired with weaker players. Great technical team members know the work they do on a benchmark at midnight matters most when connected to a successful customer purchase.</p>
+<p>To accelerate growth, successful companies reward playmakers, value assists and help team members move fast.</p>
+<p><strong><em>Notes:</em></strong></p>
+<p><em>The quote in this piece is attributed to Tim Notke, a high school coach. It was popularized by Kevin Durant in 2007 when he was the National College Basketball Player of the Year.</em></p>
+<p><em>Hockey assists are a big deal. There are 1.7 assists to every goal in the NHL today. In the early days of the NHL, the ratio was just .4 assists per goal.</em></p>
+<p><a href="http://www.trifects.com/being-a-playmaker-and-a-teammate/playmaker/" rel="attachment wp-att-469"><img class="alignleft size-full wp-image-469" alt="Hockey stick-handling to maneuver through opponents" src="http://www.trifects.com/wp-content/uploads/2013/05/playmaker.jpg" width="625" height="414"></a></p>
+					</div>');
         }
 
         $('#copypaste').keyup(function (e) {
