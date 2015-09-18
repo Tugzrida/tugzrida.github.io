@@ -1,5 +1,5 @@
-var week = "10B";
-var quote = "Seize the Day.";
+var week = "1A";
+var quote = "Hard work beats talent when talent doesn’t work hard.";
 var quotelines = 1;
-var person = "Horace(Ancient Roman Poet)";
-var wiki = "Horace";
+var person = "Tim Notke";
+var wiki = "";
