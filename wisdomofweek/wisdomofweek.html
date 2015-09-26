@@ -56,12 +56,12 @@
     }
 </style>
 <div id="quotecontainer">
-    <blockquote id="quote"><cite id="cite"></cite>
+    <blockquote><span id="quote"></span><cite id="cite"></cite>
     </blockquote>
 </div>
 <script>
     function getQuote() {
-        $("#quote").prepend(quote);
+        $("#quote").html(quote);
         $("#cite").html(person);
 
         switch (quotelines) {
