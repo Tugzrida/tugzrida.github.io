@@ -1,5 +1,5 @@
-var week = "1A";
-var quote = "I think the biggest thing I’ve learned is there’s no amount<br>of success that allows you to stop working hard.";
-var quotelines = 2;
-var person = "Shawn Mendes";
-var wiki = "Shawn_Mendes";
+var week = "2B";
+var quote = "The secret of getting ahead is getting started";
+var quotelines = 1;
+var person = "Mark Twain";
+var wiki = "Mark_Twain";
