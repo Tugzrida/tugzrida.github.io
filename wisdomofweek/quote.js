@@ -1,5 +1,5 @@
-var week = "2B";
-var quote = "The secret of getting ahead is getting started.";
-var quotelines = 1;
-var person = "Mark Twain";
-var wiki = "Mark_Twain";
+var week = "3A";
+var quote = "The art of being wise is the art of knowing what to<br>overlook.";
+var quotelines = 2;
+var person = "William James";
+var wiki = "William_James";
