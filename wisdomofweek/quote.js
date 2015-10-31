@@ -1,5 +1,5 @@
-var week = "4B";
-var quote = "I can live for two months on a good compliment.";
+var week = "5A";
+var quote = "The solution does not care where the problem came from.";
 var quotelines = 1;
-var person = "Mark Twain";
-var wiki = "Mark_Twain";
+var person = "Ludwig Wittgenstein";
+var wiki = "Ludwig_Wittgenstein";
