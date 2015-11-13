@@ -1,5 +1,5 @@
-var week = "6B";
-var quote = "It is not the strongest of the species that survive, but the<br>ones responsive to change.";
-var quotelines = 2;
-var person = "Charles Darwin";
-var wiki = "Charles_Darwin";
+var week = "7A";
+var quote = "The first rule of holes is ... when you're in one, stop digging.";
+var quotelines = 1;
+var person = "Molly Ivins";
+var wiki = "Molly_Ivins";
