@@ -1,5 +1,5 @@
-var week = "7A";
-var quote = "The first rule of holes is ... when you're in one, stop digging.";
-var quotelines = 1;
-var person = "Molly Ivins";
-var wiki = "Molly_Ivins";
+var week = "8B";
+var quote = "The problem is not that there are problems.<br>The problem is thinking that having problems, is a problem.";
+var quotelines = 2;
+var person = "Theodore Isaac Rubin";
+var wiki = "Theodore_Isaac_Rubin";
