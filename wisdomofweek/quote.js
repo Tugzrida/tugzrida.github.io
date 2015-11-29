@@ -1,5 +1,5 @@
-var week = "8B";
-var quote = "The problem is not that there are problems.<br>The problem is thinking that having problems, is a problem.";
+var week = "9A";
+var quote = "The pessimist sees difficulty in every opportunity.<br>The optimist sees the opportunity in every difficulty.";
 var quotelines = 2;
-var person = "Theodore Isaac Rubin";
-var wiki = "Theodore_Isaac_Rubin";
+var person = "Winston Churchill";
+var wiki = "Winston_Churchill";
