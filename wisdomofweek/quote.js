@@ -1,5 +1,5 @@
-var week = "9A";
-var quote = "The pessimist sees difficulty in every opportunity.<br>The optimist sees the opportunity in every difficulty.";
+var week = "10B";
+var quote = "We can't solve problems by using the same kind of thinking<br>that we used when we created them.";
 var quotelines = 2;
-var person = "Winston Churchill";
-var wiki = "Winston_Churchill";
+var person = "Albert Einstein";
+var wiki = "Albert_Einstein";
