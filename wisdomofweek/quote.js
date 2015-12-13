@@ -1,5 +1,5 @@
 var week = "10B";
-var quote = "We can't solve problems by using the same kind of thinking<br>that we used when we created them.";
+var quote = "You are braver than you believe, stronger than you seem,<br>and smarter than you think.";
 var quotelines = 2;
-var person = "Albert Einstein";
-var wiki = "Albert_Einstein";
+var person = "A. A. Milne";
+var wiki = "A._A._Milne";
