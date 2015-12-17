@@ -7,12 +7,18 @@
 </head>
 
 <body>
-    <video width="640" height="480" id="my-video" class="video-js" data-setup='{"controls" : true, "preload": "auto"}'>
+    FLV:
+    <video width="640" height="480" id="my-video" class="video-js" data-setup='{"controls" : true, "preload": "metadata"}'>
         <source src="SampleVideo_1080x720_10mb.flv" type='video/x-flv' />
     </video>
-    <video width="640" height="480" id="my-video-2" class="video-js" data-setup='{"controls" : true, "preload": "auto"}'>
-        <source src="SampleVideo_1080x720_10mb.flv" type='video/mp4' />
+    <br>
+    <br>MP4:
+    <video width="640" height="480" id="my-video-2" class="video-js" data-setup='{"controls" : true, "preload": "metadata"}'>
+        <source src="big_buck_bunny_720p_10mb.mp4" type='video/mp4' />
     </video>
+    <div style="float: right; position: fixed; width: 300px;">
+        When in fullscreen, observe the different behaviour between the cursor for an FLV and MP4 video. The cursor disappears for the MP4 thanks to the <pre>.vjs-user-inactive</pre>class however it doesn't disappear for the FLV. From reading SO and the like, this is easiest to fix in the flash rather than HTML/CSS.
+    </div>
 </body>
 
 </html>
