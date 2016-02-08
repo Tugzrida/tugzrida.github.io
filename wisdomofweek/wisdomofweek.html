@@ -1,84 +1,103 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="quote.js"></script>
-<style>
-    blockquote {
-        font-family: Georgia, serif;
-        font-size: 18px;
-        font-style: italic;
-        width: 500px;
-        margin: 0.25em 0;
-        padding: 0.25em 40px;
-        line-height: 1.45;
-        position: relative;
-        left: 17px;
-        color: #383838;
-    }
-    
-    div {
-        background-color: white;
-        position: absolute;
-        left: 0px;
-        height: 59px;
-        width: 540px;
-        top: 0px;
-    }
-    
-    blockquote:before {
-        display: block;
-        content: "\201C";
-        font-size: 80px;
-        position: absolute;
-        left: -7px;
-        top: -20px;
-        color: #7a7a7a;
-    }
-    
-    blockquote cite {
-        color: #999999;
-        font-size: 14px;
-        display: block;
-        margin-top: 5px;
-    }
-    
-    blockquote cite:before {
-        content: "\2014 \2009";
-    }
-    
-    body {
-        background-color: black;
-    }
-    
-    #clkmsg {
-        color: #999999;
-        font-size: 14px;
-        position: absolute;
-        right: 60px;
-    }
-</style>
-<div id="quotecontainer">
-    <blockquote><span id="quote"></span><cite id="cite"></cite>
-    </blockquote>
-</div>
-<script>
-    function getQuote() {
-        $("#quote").html(quote);
-        $("#cite").html(person);
+<!DOCTYPE html>
+<html>
 
-        switch (quotelines) {
-        case 1:
-            document.getElementById("quotecontainer").style.height = "59px";
-            break;
-        case 2:
-            document.getElementById("quotecontainer").style.height = "85px";
-            break;
-        case 3:
-            document.getElementById("quotecontainer").style.height = "111px";
-            break;
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="quote.js"></script>
+    <style>
+        blockquote {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-style: italic;
+            width: 500px;
+            margin: 0.25em 0;
+            padding: 0.25em 40px;
+            line-height: 1.45;
+            position: relative;
+            left: 17px;
+            color: #383838;
+        }
+        
+        div {
+            background-color: white;
+            position: absolute;
+            left: 0px;
+            height: 59px;
+            width: 540px;
+            top: 0px;
+        }
+        
+        blockquote:before {
+            display: block;
+            content: "\201C";
+            font-size: 80px;
+            position: absolute;
+            left: -7px;
+            top: -20px;
+            color: #7a7a7a;
+        }
+        
+        blockquote cite {
+            color: #999999;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+        
+        blockquote cite:before {
+            content: "\2014 \2009";
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        #clkmsg {
+            color: #999999;
+            font-size: 14px;
+            position: absolute;
+            right: 60px;
         }
 
-        if (window.location.search == "?makepic") {
-            $('#cite').append('<span id="clkmsg">Click for info...</span>');
+    </style>
+</head>
+
+<body>
+    <div id="quotecontainer">
+        <blockquote><span id="quote"></span><cite id="cite"></cite>
+        </blockquote>
+    </div>
+    <script>
+        function getQuote() {
+            $("#quote").html(quote);
+            $("#cite").html(person);
+
+            switch (quotelines) {
+                case 1:
+                    document.getElementById("quotecontainer").style.height = "59px";
+                    break;
+                case 2:
+                    document.getElementById("quotecontainer").style.height = "85px";
+                    break;
+                case 3:
+                    document.getElementById("quotecontainer").style.height = "111px";
+                    break;
+            }
         }
-    }
-    document.onready = getQuote();
-</script>
+
+        $(document).ready(function() {
+            if (window.location.search == "?makepic") {
+                newquote = document.createElement("script");
+                $(newquote).html(prompt("New quote.js?"));
+                $('body').prepend(newquote);
+                getQuote();
+                $('#cite').append('<span id="clkmsg">Click for info...</span>');
+            } else {
+                getQuote();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
