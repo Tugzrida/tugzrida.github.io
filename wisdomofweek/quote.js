@@ -1,5 +1,5 @@
-var week = "10B";
-var quote = "You are braver than you believe, stronger than you seem,<br>and smarter than you think.";
+var week = "3A";
+var quote = "If you're walking down the right path and you're willing<br>to keep walking, eventually you'll make progress.";
 var quotelines = 2;
-var person = "A. A. Milne";
-var wiki = "A._A._Milne";
+var person = "Barack Obama";
+var wiki = "Barack_Obama";
