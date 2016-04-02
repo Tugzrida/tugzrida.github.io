@@ -1,5 +1,5 @@
-var week = "3A";
-var quote = "If you're walking down the right path and you're willing<br>to keep walking, eventually you'll make progress.";
+var week = "11A";
+var quote = "Our greatest weakness lies in giving up. The most certain<br>way to succeed is always to try just one more time.";
 var quotelines = 2;
-var person = "Barack Obama";
-var wiki = "Barack_Obama";
+var person = "Thomas Edison";
+var wiki = "Thomas_Edison";
