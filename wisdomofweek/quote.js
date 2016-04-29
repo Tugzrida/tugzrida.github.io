@@ -1,5 +1,5 @@
-var week = "11A";
-var quote = "Our greatest weakness lies in giving up. The most certain<br>way to succeed is always to try just one more time.";
+var week = "2A";
+var quote = "I'm a million miles ahead of where I'm from<br>But there's still another million miles to come";
 var quotelines = 2;
-var person = "Thomas Edison";
-var wiki = "Thomas_Edison";
+var person = "\"Trouble\" by Avicii";
+var wiki = "Stories_(Avicii_album)";
