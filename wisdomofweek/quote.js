@@ -1,5 +1,5 @@
-var week = "2A";
-var quote = "I'm a million miles ahead of where I'm from<br>But there's still another million miles to come";
+var week = "3B";
+var quote = "At the end of the day, Some you win, some you don’t<br>So I’m glad that I’m here with some friends that I know";
 var quotelines = 2;
-var person = "\"Trouble\" by Avicii";
-var wiki = "Stories_(Avicii_album)";
+var person = "\"Que Sera\" by Justice Crew";
+var wiki = "Que_Sera_(Justice_Crew_song)";
