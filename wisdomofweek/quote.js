@@ -1,5 +1,5 @@
-var week = "3B";
-var quote = "At the end of the day, Some you win, some you don’t<br>So I’m glad that I’m here with some friends that I know";
+var week = "4A";
+var quote = "I can't tell where the journey will end, But I know<br>where to start";
 var quotelines = 2;
-var person = "\"Que Sera\" by Justice Crew";
-var wiki = "Que_Sera_(Justice_Crew_song)";
+var person = "\"Wake Me Up\" by Avicii";
+var wiki = "Wake_Me_Up_(Avicii_song)";
