@@ -1,5 +1,5 @@
-var week = "4A";
-var quote = "I can't tell where the journey will end, But I know<br>where to start";
-var quotelines = 2;
-var person = "\"Wake Me Up\" by Avicii";
-var wiki = "Wake_Me_Up_(Avicii_song)";
+var week = "5B";
+var quote = "What's wrong with being confident?";
+var quotelines = 1;
+var person = "\"Confident\" by Demi Lovato";
+var wiki = "Confident_(Demi_Lovato_song)";
