@@ -1,5 +1,5 @@
-var week = "6A";
-var quote = "Science is the key to our future, and if you don’t believe in<br>science, then you’re holding everybody back.";
+var week = "7B";
+var quote = "Service to others is the rent you pay for your room here on<br>earth.";
 var quotelines = 2;
-var person = "Bill Nye";
-var wiki = "Bill_Nye";
+var person = "Muhammad Ali";
+var wiki = "Muhammad_Ali";
