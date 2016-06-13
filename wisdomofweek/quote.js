@@ -1,5 +1,5 @@
-var week = "7B";
-var quote = "Service to others is the rent you pay for your room here on<br>earth.";
+var week = "8A";
+var quote = "You have enemies? Good. That means you've stood up for<br>something, sometime in your life.";
 var quotelines = 2;
-var person = "Muhammad Ali";
-var wiki = "Muhammad_Ali";
+var person = "Winston Churchill";
+var wiki = "Winston_Churchill";
