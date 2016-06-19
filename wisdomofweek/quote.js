@@ -1,5 +1,5 @@
-var week = "8A";
-var quote = "You have enemies? Good. That means you've stood up for<br>something, sometime in your life.";
+var week = "9B";
+var quote = "A river cuts through rock, not because of its power, but<br>because of its persistence.";
 var quotelines = 2;
-var person = "Winston Churchill";
-var wiki = "Winston_Churchill";
+var person = "Jim Watkins";
+var wiki = "Jim_Watkins";
