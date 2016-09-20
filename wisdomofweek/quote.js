@@ -1,5 +1,5 @@
-var week = "9B";
-var quote = "A river cuts through rock, not because of its power, but<br>because of its persistence.";
+var week = "10A";
+var quote = "Don't worry about failures, worry about the chances you<br>miss when you don't even try.";
 var quotelines = 2;
-var person = "Jim Watkins";
-var wiki = "Jim_Watkins";
+var person = "Jack Canfield";
+var wiki = "Jack_Canfield";
