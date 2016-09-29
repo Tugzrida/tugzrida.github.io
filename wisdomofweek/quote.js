@@ -1,5 +1,5 @@
 var week = "10A";
-var quote = "Don't worry about failures, worry about the chances you<br>miss when you don't even try.";
+var quote = "And you don't have to change a thing, the world could<br>change its heart";
 var quotelines = 2;
-var person = "Jack Canfield";
-var wiki = "Jack_Canfield";
+var person = "'Scars To Your Beautiful' by Alessia Cara";
+var wiki = "Scars_to_Your_Beautiful";
