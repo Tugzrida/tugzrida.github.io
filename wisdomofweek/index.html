@@ -11,6 +11,7 @@
     <script src="//tugzrida.github.io/wisdomofweek/quote.js"></script>
     <script type="text/javascript">
         document.write('<base href="https://en.wikipedia.org/wiki/' + wiki + '" target="_blank">');
+
     </script>
     <style>
         #wikientry {
@@ -69,6 +70,7 @@
         sub {
             vertical-align: sub !important;
         }
+
     </style>
 </head>
 
@@ -123,13 +125,14 @@
             $('.mw-editsection').remove();
             $('#wikientry a[href^="#"]').click(function(e) {
                 e.preventDefault();
-                $("#wikientry").scrollTop($("#wikientry").scrollTop() + $($(this).attr('href')).offset().top - $("#wikientry").offset().top);
+                $("#wikientry").scrollTop($("#wikientry").scrollTop() + $($(this).attr('href').replace(/(:|\.|\[|\]|,|=)/g, "\\$1")).offset().top - $("#wikientry").offset().top);
             });
         }
 
         $('#copypaste').keyup(function(e) {
             $(this).html('<a href="https://tugzrida.github.io/wisdomofweek/" target="_blank"><img src="https://tugzrida.github.io/wisdomofweek/wisdomofweek.png" width="540px"></a>');
         });
+
     </script>
 </body>
 
