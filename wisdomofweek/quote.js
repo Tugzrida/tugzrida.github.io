@@ -1,4 +1,4 @@
-var quote = "And you don't have to change a thing, the world could<br>change its heart";
-var quotelines = 2;
-var person = "'Scars To Your Beautiful' by Alessia Cara";
-var wiki = "Scars_to_Your_Beautiful";
+var quote = "Where's the Love?";
+var quotelines = 1;
+var person = "#WHERESTHELOVE - The Black Eyed Peas + The World";
+var wiki = "Where_Is_the_Love%3F";
