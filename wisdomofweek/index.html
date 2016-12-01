@@ -16,8 +16,8 @@
     <style>
         body {
             margin-top: 5px;
-            background-color: black;
-            color: white;
+            /*background-color: black;
+            color: white;*/
         }
         
         #wikientry {
@@ -27,7 +27,7 @@
             margin-right: auto;
             border: 1px solid #ccc;
             border-radius: 4px;
-            /*            padding: 15px;*/
+            padding: 15px;
         }
         
         #instructions {
@@ -54,7 +54,7 @@
             padding: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            /*            background-color: #f5f5f5;*/
+            background-color: #f5f5f5;
             background-color: black;
             overflow-x: scroll;
         }
@@ -90,13 +90,13 @@
     </div>
     <div id="wikiwrapper">
         <div id="wikientry">
-            <iframe frameborder="0" id="loveframe" src="https://www.wheresthelove.com" style="width: 100%; height: 100%;"></iframe>
+            <!--<iframe frameborder="0" id="loveframe" src="https://www.wheresthelove.com" style="width: 100%; height: 100%;"></iframe>-->
         </div>
-        <!--<br>
-        <div id="siteSub">Wikipedia, the free encyclopedia</div>-->
-        <div id="siteSub">
+        <br>
+        <div id="siteSub">Wikipedia, the free encyclopedia</div>
+        <!--<div id="siteSub">
             <h4>- <a style="color: #999999;" href="https://www.wheresthelove.com">wheresthelove.com</a></h4></div>
-    </div>
+    </div>-->
     <div id="instructions">
         <h3>Insert the wisdom quote into your email signature:</h3> Select all the contents in the section below and copy/paste it into the end of your signature block in your email client.
         <br>
@@ -112,7 +112,7 @@
         function loadWiki() {
             var wikiscript = document.createElement('script');
             wikiscript.setAttribute('src', 'https://en.wikipedia.org/w/api.php?action=parse&prop=text&format=json&callback=wikiLoaded&page=' + wiki);
-            //document.body.appendChild(wikiscript);
+            document.body.appendChild(wikiscript);
             switch (quotelines) {
                 case 1:
                     document.getElementById("quoteframe").style.height = "59px";
