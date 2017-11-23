@@ -94,6 +94,9 @@
                 $('body').prepend(newquote);
                 getQuote();
                 $('#cite').append('<span id="clkmsg">Click for info...</span>');
+            } else if (window.location.search == "?makepicserv") {
+                getQuote();
+                $('#cite').append('<span id="clkmsg">Click for info...</span>');
             } else {
                 getQuote();
             }
