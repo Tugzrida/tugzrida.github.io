@@ -1,4 +1,4 @@
-var quote = "And you don't have to change a thing, the world could<br>change its heart";
-var quotelines = 2;
-var person = "\"Scars to Your Beautiful\" by Alessia Cara";
-var wiki = "Scars_to_Your_Beautiful";
+var quote = "#LoveWins";
+var quotelines = 1;
+var person = "Australia passes marriage equality";
+var wiki = "History_of_same-sex_marriage_in_Australia";
