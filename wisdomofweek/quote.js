@@ -1,4 +1,4 @@
-var quote = 'The man who questions opinions is wise. The man who<br>quarrels with facts is a fool.';
+var quote = 'Normality is but a paved road. Comfortable to walk, yes,<br>but no flowers grow on it.';
 var quotelines = 2;
-var person = "Frank A. Garbutt";
-var wiki = "Garbutt_House";
+var person = "Vincent van Gogh";
+var wiki = "Vincent_van_Gogh";
